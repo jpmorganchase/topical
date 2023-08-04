@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Topical.attention_classifier.ClassifierTrainer.hyperparameter_search &mdash; Topical 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Topical
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.api.html">crawler.api.api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.crawler_config.html">crawler.api.crawler_config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.github_crawler.html">crawler.api.github_crawler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.compute_embeddings.html">Topical.compute_embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.run.html">Topical.run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.attention_classifier.html">Topical.attention_classifier</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Topical</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Topical.attention_classifier.ClassifierTrainer.hyperparameter_search</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_autosummary/Topical.attention_classifier.ClassifierTrainer.hyperparameter_search.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="topical-attention-classifier-classifiertrainer-hyperparameter-search">
+<h1>Topical.attention_classifier.ClassifierTrainer.hyperparameter_search<a class="headerlink" href="#topical-attention-classifier-classifiertrainer-hyperparameter-search" title="Permalink to this headline">¶</a></h1>
+<dl class="py method">
+<dt id="Topical.attention_classifier.ClassifierTrainer.hyperparameter_search">
+<code class="sig-prename descclassname"><span class="pre">ClassifierTrainer.</span></code><code class="sig-name descname"><span class="pre">hyperparameter_search</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hp_space</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">optuna.Trial</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compute_objective</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_trials</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'minimize'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backend</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">transformers.trainer_utils.HPSearchBackend</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hp_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">optuna.Trial</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">transformers.trainer_utils.BestRun</span><a class="headerlink" href="#Topical.attention_classifier.ClassifierTrainer.hyperparameter_search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch an hyperparameter search using <code class="docutils literal notranslate"><span class="pre">optuna</span></code> or <code class="docutils literal notranslate"><span class="pre">Ray</span> <span class="pre">Tune</span></code>. The optimized quantity is determined by
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_objective</span></code>, which defaults to a function returning the evaluation loss when no metric is
+provided, the sum of all metrics otherwise.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To use this method, you need to have provided a <code class="docutils literal notranslate"><span class="pre">model_init</span></code> when initializing your
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Trainer</span></code>: we need to reinitialize the model at each new run. This is incompatible
+with the <code class="docutils literal notranslate"><span class="pre">optimizers</span></code> argument, so you need to subclass <code class="xref py py-class docutils literal notranslate"><span class="pre">Trainer</span></code> and override the
+method <code class="xref py py-meth docutils literal notranslate"><span class="pre">create_optimizer_and_scheduler()</span></code> for custom optimizer/scheduler.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hp_space</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Callable[[&quot;optuna.Trial&quot;],</span> <span class="pre">Dict[str,</span> <span class="pre">float]]</span></code>, <cite>optional</cite>) – A function that defines the hyperparameter search space. Will default to
+<code class="xref py py-func docutils literal notranslate"><span class="pre">default_hp_space_optuna()</span></code> or
+<code class="xref py py-func docutils literal notranslate"><span class="pre">default_hp_space_ray()</span></code> depending on your backend.</p></li>
+<li><p><strong>compute_objective</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Callable[[Dict[str,</span> <span class="pre">float]],</span> <span class="pre">float]</span></code>, <cite>optional</cite>) – A function computing the objective to minimize or maximize from the metrics returned by the
+<a class="reference internal" href="Topical.attention_classifier.ClassifierTrainer.evaluate.html#Topical.attention_classifier.ClassifierTrainer.evaluate" title="Topical.attention_classifier.ClassifierTrainer.evaluate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">evaluate</span></code></a> method. Will default to <code class="xref py py-func docutils literal notranslate"><span class="pre">default_compute_objective()</span></code>.</p></li>
+<li><p><strong>n_trials</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>, <cite>optional</cite>, defaults to 100) – The number of trial runs to test.</p></li>
+<li><p><strong>direction</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, <cite>optional</cite>, defaults to <code class="xref py py-obj docutils literal notranslate"><span class="pre">&quot;minimize&quot;</span></code>) – Whether to optimize greater or lower objects. Can be <code class="xref py py-obj docutils literal notranslate"><span class="pre">&quot;minimize&quot;</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">&quot;maximize&quot;</span></code>, you should
+pick <code class="xref py py-obj docutils literal notranslate"><span class="pre">&quot;minimize&quot;</span></code> when optimizing the validation loss, <code class="xref py py-obj docutils literal notranslate"><span class="pre">&quot;maximize&quot;</span></code> when optimizing one or
+several metrics.</p></li>
+<li><p><strong>backend</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> or <code class="xref py py-class docutils literal notranslate"><span class="pre">HPSearchBackend</span></code>, <cite>optional</cite>) – The backend to use for hyperparameter search. Will default to optuna or Ray Tune, depending on which
+one is installed. If both are installed, will default to optuna.</p></li>
+<li><p><strong>kwargs</strong> – <p>Additional keyword arguments passed along to <code class="xref py py-obj docutils literal notranslate"><span class="pre">optuna.create_study</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">ray.tune.run</span></code>. For
+more information see:</p>
+<ul>
+<li><p>the documentation of <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.create_study.html">optuna.create_study</a></p></li>
+<li><p>the documentation of <a class="reference external" href="https://docs.ray.io/en/latest/tune/api_docs/execution.html#tune-run">tune.run</a></p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>All the information about the best run.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">transformers.trainer_utils.BestRun</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Eloul, Lherondelle.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

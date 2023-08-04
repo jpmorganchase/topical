@@ -1,0 +1,22 @@
+/senatus_code_s4.egg-info/
+/.tox/
+/dist/
+/.idea/
+/.tmp/
+Topical/output/
+/dataset/
+/examples/dataset/
+/Topical/dataset/
+/crawler/dataset/
+/distilbert-base-uncased/
+/build/
+/dst/
+/roberta-python/
+/SoftwareTagRecommender/
+.DS_Store
+.idea*
+/senatus_code_s4.egg-info/
+/examples/results_classifier/
+.ipynb_checkpoints
+/study notebooks
+__pycache__/

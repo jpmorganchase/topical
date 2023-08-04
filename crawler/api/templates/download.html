@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title>GitHub Crawler API</title>
+</head>
+<body>
+<h1>GitHub Crawler API</h1>
+Upload your JSON file containing the topics to scrap.
+
+Once the scrapping is over, it will automatically download the zip containing the scrapped repositories.
+<form method="POST" action="http://127.0.0.1:5000/api/" enctype="multipart/form-data">
+    <p><input type="file" name="file"></p>
+    <p><input type="submit" value="Submit"></p>
+</form>
+
+<p> {{ output | safe }}</p>
+</body>
+</html>

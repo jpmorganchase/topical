@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Topical.attention_classifier.Attention.to &mdash; Topical 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Topical
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.api.html">crawler.api.api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.crawler_config.html">crawler.api.crawler_config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.github_crawler.html">crawler.api.github_crawler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.compute_embeddings.html">Topical.compute_embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.run.html">Topical.run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.attention_classifier.html">Topical.attention_classifier</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Topical</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Topical.attention_classifier.Attention.to</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_autosummary/Topical.attention_classifier.Attention.to.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="topical-attention-classifier-attention-to">
+<h1>Topical.attention_classifier.Attention.to<a class="headerlink" href="#topical-attention-classifier-attention-to" title="Permalink to this headline">¶</a></h1>
+<dl class="py method">
+<dt id="Topical.attention_classifier.Attention.to">
+<code class="sig-prename descclassname"><span class="pre">Attention.</span></code><code class="sig-name descname"><span class="pre">to</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Topical.attention_classifier.Attention.to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Moves and/or casts the parameters and buffers.</p>
+<p>This can be called as</p>
+<dl class="py function">
+<dt id="id0">
+<code class="sig-name descname"><span class="pre">to</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">non_blocking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Topical.attention_classifier.to">
+<code class="sig-prename descclassname"><span class="pre">Topical.attention_classifier.</span></code><code class="sig-name descname"><span class="pre">to</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dtype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">non_blocking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Topical.attention_classifier.to" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="id1">
+<code class="sig-prename descclassname"><span class="pre">Topical.attention_classifier.</span></code><code class="sig-name descname"><span class="pre">to</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">non_blocking</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="id2">
+<code class="sig-prename descclassname"><span class="pre">Topical.attention_classifier.</span></code><code class="sig-name descname"><span class="pre">to</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">memory_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">torch.channels_last</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Its signature is similar to <code class="xref py py-meth docutils literal notranslate"><span class="pre">torch.Tensor.to()</span></code>, but only accepts
+floating point or complex <code class="xref py py-attr docutils literal notranslate"><span class="pre">dtype`s.</span> <span class="pre">In</span> <span class="pre">addition,</span> <span class="pre">this</span> <span class="pre">method</span> <span class="pre">will</span>
+<span class="pre">only</span> <span class="pre">cast</span> <span class="pre">the</span> <span class="pre">floating</span> <span class="pre">point</span> <span class="pre">or</span> <span class="pre">complex</span> <span class="pre">parameters</span> <span class="pre">and</span> <span class="pre">buffers</span> <span class="pre">to</span> <span class="pre">:attr:`dtype</span></code>
+(if given). The integral parameters and buffers will be moved
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">device</span></code>, if that is given, but with dtypes unchanged. When
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">non_blocking</span></code> is set, it tries to convert/move asynchronously
+with respect to the host if possible, e.g., moving CPU Tensors with
+pinned memory to CUDA devices.</p>
+<p>See below for examples.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method modifies the module in-place.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>device</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">torch.device</span></code>) – the desired device of the parameters
+and buffers in this module</p></li>
+<li><p><strong>dtype</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">torch.dtype</span></code>) – the desired floating point or complex dtype of
+the parameters and buffers in this module</p></li>
+<li><p><strong>tensor</strong> (<em>torch.Tensor</em>) – Tensor whose dtype and device are the desired
+dtype and device for all parameters and buffers in this module</p></li>
+<li><p><strong>memory_format</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">torch.memory_format</span></code>) – the desired memory
+format for 4D parameters and buffers in this module (keyword
+only argument)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>self</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Module</p>
+</dd>
+</dl>
+<p>Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span><span class="o">.</span><span class="n">weight</span>
+<span class="go">Parameter containing:</span>
+<span class="go">tensor([[ 0.1913, -0.3420],</span>
+<span class="go">        [-0.5113, -0.2325]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">double</span><span class="p">)</span>
+<span class="go">Linear(in_features=2, out_features=2, bias=True)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span><span class="o">.</span><span class="n">weight</span>
+<span class="go">Parameter containing:</span>
+<span class="go">tensor([[ 0.1913, -0.3420],</span>
+<span class="go">        [-0.5113, -0.2325]], dtype=torch.float64)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gpu1</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cuda:1&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">gpu1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">half</span><span class="p">,</span> <span class="n">non_blocking</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">Linear(in_features=2, out_features=2, bias=True)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span><span class="o">.</span><span class="n">weight</span>
+<span class="go">Parameter containing:</span>
+<span class="go">tensor([[ 0.1914, -0.3420],</span>
+<span class="go">        [-0.5112, -0.2324]], dtype=torch.float16, device=&#39;cuda:1&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cpu</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cpu&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">cpu</span><span class="p">)</span>
+<span class="go">Linear(in_features=2, out_features=2, bias=True)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span><span class="o">.</span><span class="n">weight</span>
+<span class="go">Parameter containing:</span>
+<span class="go">tensor([[ 0.1914, -0.3420],</span>
+<span class="go">        [-0.5112, -0.2324]], dtype=torch.float16)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">bias</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cdouble</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span><span class="o">.</span><span class="n">weight</span>
+<span class="go">Parameter containing:</span>
+<span class="go">tensor([[ 0.3741+0.j,  0.2382+0.j],</span>
+<span class="go">        [ 0.5593+0.j, -0.4443+0.j]], dtype=torch.complex128)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">linear</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">cdouble</span><span class="p">))</span>
+<span class="go">tensor([[0.6122+0.j, 0.1150+0.j],</span>
+<span class="go">        [0.6122+0.j, 0.1150+0.j],</span>
+<span class="go">        [0.6122+0.j, 0.1150+0.j]], dtype=torch.complex128)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Eloul, Lherondelle.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

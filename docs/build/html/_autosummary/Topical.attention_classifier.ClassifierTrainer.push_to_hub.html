@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Topical.attention_classifier.ClassifierTrainer.push_to_hub &mdash; Topical 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Topical
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.api.html">crawler.api.api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.crawler_config.html">crawler.api.crawler_config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.github_crawler.html">crawler.api.github_crawler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.compute_embeddings.html">Topical.compute_embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.run.html">Topical.run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.attention_classifier.html">Topical.attention_classifier</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Topical</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Topical.attention_classifier.ClassifierTrainer.push_to_hub</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_autosummary/Topical.attention_classifier.ClassifierTrainer.push_to_hub.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="topical-attention-classifier-classifiertrainer-push-to-hub">
+<h1>Topical.attention_classifier.ClassifierTrainer.push_to_hub<a class="headerlink" href="#topical-attention-classifier-classifiertrainer-push-to-hub" title="Permalink to this headline">¶</a></h1>
+<dl class="py method">
+<dt id="Topical.attention_classifier.ClassifierTrainer.push_to_hub">
+<code class="sig-prename descclassname"><span class="pre">ClassifierTrainer.</span></code><code class="sig-name descname"><span class="pre">push_to_hub</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repo_url</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">commit_message</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'add</span> <span class="pre">model'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">organization</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">private</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_auth_token</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Topical.attention_classifier.ClassifierTrainer.push_to_hub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload <cite>self.model</cite> to the 🤗 model hub.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>repo_name</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, <cite>optional</cite>) – Repository name for your model or tokenizer in the hub. If not specified and <code class="xref py py-obj docutils literal notranslate"><span class="pre">repo_url</span></code> is not
+specified either, will default to the stem of <code class="xref py py-obj docutils literal notranslate"><span class="pre">self.args.output_dir</span></code>.</p></li>
+<li><p><strong>repo_url</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, <cite>optional</cite>) – Specify this in case you want to push to an existing repository in the hub. If unspecified, a new
+repository will be created in your namespace (unless you specify an <code class="xref py py-obj docutils literal notranslate"><span class="pre">organization</span></code>) with
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">repo_name</span></code>.</p></li>
+<li><p><strong>commit_message</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, <cite>optional</cite>, defaults to <code class="xref py py-obj docutils literal notranslate"><span class="pre">&quot;add</span> <span class="pre">model&quot;</span></code>) – Message to commit while pushing.</p></li>
+<li><p><strong>organization</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, <cite>optional</cite>) – Organization in which you want to push your model or tokenizer (you must be a member of this
+organization).</p></li>
+<li><p><strong>private</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code>, <cite>optional</cite>) – Whether or not the repository created should be private (requires a paying subscription).</p></li>
+<li><p><strong>use_auth_token</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, <cite>optional</cite>) – The token to use as HTTP bearer authorization for remote files. If <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>, will use the token
+generated when running <code class="xref py py-obj docutils literal notranslate"><span class="pre">transformers-cli</span> <span class="pre">login</span></code> (stored in <code class="xref py py-obj docutils literal notranslate"><span class="pre">huggingface</span></code>). Will default to
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code> if <code class="xref py py-obj docutils literal notranslate"><span class="pre">repo_url</span></code> is not specified.</p></li>
+<li><p><strong>kwargs</strong> – Additional keyword arguments passed along to <code class="xref py py-meth docutils literal notranslate"><span class="pre">create_model_card()</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The url of the commit of your model in the given repository.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Eloul, Lherondelle.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

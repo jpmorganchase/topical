@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>crawler.api.github_crawler.GithubCrawler &mdash; Topical 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="crawler.api.github_crawler.GithubCrawler.create_files" href="crawler.api.github_crawler.GithubCrawler.create_files.html" />
+    <link rel="prev" title="crawler.api.github_crawler" href="crawler.api.github_crawler.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Topical
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.api.html">crawler.api.api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.crawler_config.html">crawler.api.crawler_config</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="crawler.api.github_crawler.html">crawler.api.github_crawler</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">crawler.api.github_crawler.GithubCrawler</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.create_files.html">crawler.api.github_crawler.GithubCrawler.create_files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.create_folders.html">crawler.api.github_crawler.GithubCrawler.create_folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.download_repository.html">crawler.api.github_crawler.GithubCrawler.download_repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.get_all_featured_github.html">crawler.api.github_crawler.GithubCrawler.get_all_featured_github</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.get_number_of_commits.html">crawler.api.github_crawler.GithubCrawler.get_number_of_commits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.get_stats.html">crawler.api.github_crawler.GithubCrawler.get_stats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.make_tree_request.html">crawler.api.github_crawler.GithubCrawler.make_tree_request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.match_topics_to_featured.html">crawler.api.github_crawler.GithubCrawler.match_topics_to_featured</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.request_api.html">crawler.api.github_crawler.GithubCrawler.request_api</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.save_csv.html">crawler.api.github_crawler.GithubCrawler.save_csv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.scrap.html">crawler.api.github_crawler.GithubCrawler.scrap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.scrap_all_topics.html">crawler.api.github_crawler.GithubCrawler.scrap_all_topics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.scrap_topics.html">crawler.api.github_crawler.GithubCrawler.scrap_topics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.scrap_topics_github_page.html">crawler.api.github_crawler.GithubCrawler.scrap_topics_github_page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.test_auth.html">crawler.api.github_crawler.GithubCrawler.test_auth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.update_csv_results_various_topics.html">crawler.api.github_crawler.GithubCrawler.update_csv_results_various_topics</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="crawler.api.github_crawler.search_readmes.html">crawler.api.github_crawler.search_readmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.compute_embeddings.html">Topical.compute_embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.run.html">Topical.run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.attention_classifier.html">Topical.attention_classifier</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Topical</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="crawler.api.github_crawler.html">crawler.api.github_crawler</a> &raquo;</li>
+        
+      <li>crawler.api.github_crawler.GithubCrawler</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_autosummary/crawler.api.github_crawler.GithubCrawler.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="crawler-api-github-crawler-githubcrawler">
+<h1>crawler.api.github_crawler.GithubCrawler<a class="headerlink" href="#crawler-api-github-crawler-githubcrawler" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="crawler.api.github_crawler.GithubCrawler">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">crawler.api.github_crawler.</span></code><code class="sig-name descname"><span class="pre">GithubCrawler</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">crawler_config.CrawlerConfig</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#crawler.api.github_crawler.GithubCrawler" title="Permalink to this definition">¶</a></dt>
+<dd><table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.create_files.html#crawler.api.github_crawler.GithubCrawler.create_files" title="crawler.api.github_crawler.GithubCrawler.create_files"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.create_files</span></code></a>(paths, …)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.create_folders.html#crawler.api.github_crawler.GithubCrawler.create_folders" title="crawler.api.github_crawler.GithubCrawler.create_folders"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.create_folders</span></code></a>(folders, …)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.download_repository.html#crawler.api.github_crawler.GithubCrawler.download_repository" title="crawler.api.github_crawler.GithubCrawler.download_repository"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.download_repository</span></code></a>(…)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.get_all_featured_github.html#crawler.api.github_crawler.GithubCrawler.get_all_featured_github" title="crawler.api.github_crawler.GithubCrawler.get_all_featured_github"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.get_all_featured_github</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.get_number_of_commits.html#crawler.api.github_crawler.GithubCrawler.get_number_of_commits" title="crawler.api.github_crawler.GithubCrawler.get_number_of_commits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.get_number_of_commits</span></code></a>(…)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.get_stats.html#crawler.api.github_crawler.GithubCrawler.get_stats" title="crawler.api.github_crawler.GithubCrawler.get_stats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.get_stats</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.make_tree_request.html#crawler.api.github_crawler.GithubCrawler.make_tree_request" title="crawler.api.github_crawler.GithubCrawler.make_tree_request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.make_tree_request</span></code></a>(…)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.match_topics_to_featured.html#crawler.api.github_crawler.GithubCrawler.match_topics_to_featured" title="crawler.api.github_crawler.GithubCrawler.match_topics_to_featured"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.match_topics_to_featured</span></code></a>(…)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.request_api.html#crawler.api.github_crawler.GithubCrawler.request_api" title="crawler.api.github_crawler.GithubCrawler.request_api"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.request_api</span></code></a>(topics[, page])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.save_csv.html#crawler.api.github_crawler.GithubCrawler.save_csv" title="crawler.api.github_crawler.GithubCrawler.save_csv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.save_csv</span></code></a>()</p></td>
+<td><p>Save the updated result CSV at the indicated path</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.scrap.html#crawler.api.github_crawler.GithubCrawler.scrap" title="crawler.api.github_crawler.GithubCrawler.scrap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.scrap</span></code></a>(topics, limit)</p></td>
+<td><p>Factory to scrap either indicated topics or random topics</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.scrap_all_topics.html#crawler.api.github_crawler.GithubCrawler.scrap_all_topics" title="crawler.api.github_crawler.GithubCrawler.scrap_all_topics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.scrap_all_topics</span></code></a>([limit])</p></td>
+<td><p>Scrap random topics from Github using parameters set in the config and as arguments to the crawler</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.scrap_topics.html#crawler.api.github_crawler.GithubCrawler.scrap_topics" title="crawler.api.github_crawler.GithubCrawler.scrap_topics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.scrap_topics</span></code></a>(topics[, limit])</p></td>
+<td><p>Call the REST GitHub Api to fetch repositories information according to the desired topics</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.scrap_topics_github_page.html#crawler.api.github_crawler.GithubCrawler.scrap_topics_github_page" title="crawler.api.github_crawler.GithubCrawler.scrap_topics_github_page"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.scrap_topics_github_page</span></code></a>(full_name)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.test_auth.html#crawler.api.github_crawler.GithubCrawler.test_auth" title="crawler.api.github_crawler.GithubCrawler.test_auth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.test_auth</span></code></a>(auth)</p></td>
+<td><p>Test if the given credentials are correct, else connect to the API without credentials</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="crawler.api.github_crawler.GithubCrawler.update_csv_results_various_topics.html#crawler.api.github_crawler.GithubCrawler.update_csv_results_various_topics" title="crawler.api.github_crawler.GithubCrawler.update_csv_results_various_topics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GithubCrawler.update_csv_results_various_topics</span></code></a>(…)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="crawler.api.github_crawler.GithubCrawler.create_files.html" class="btn btn-neutral float-right" title="crawler.api.github_crawler.GithubCrawler.create_files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="crawler.api.github_crawler.html" class="btn btn-neutral float-left" title="crawler.api.github_crawler" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Eloul, Lherondelle.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

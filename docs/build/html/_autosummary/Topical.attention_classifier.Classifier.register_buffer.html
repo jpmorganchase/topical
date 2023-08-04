@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Topical.attention_classifier.Classifier.register_buffer &mdash; Topical 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Topical
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.api.html">crawler.api.api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.crawler_config.html">crawler.api.crawler_config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.github_crawler.html">crawler.api.github_crawler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.compute_embeddings.html">Topical.compute_embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.run.html">Topical.run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.attention_classifier.html">Topical.attention_classifier</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Topical</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Topical.attention_classifier.Classifier.register_buffer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_autosummary/Topical.attention_classifier.Classifier.register_buffer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="topical-attention-classifier-classifier-register-buffer">
+<h1>Topical.attention_classifier.Classifier.register_buffer<a class="headerlink" href="#topical-attention-classifier-classifier-register-buffer" title="Permalink to this headline">¶</a></h1>
+<dl class="py method">
+<dt id="Topical.attention_classifier.Classifier.register_buffer">
+<code class="sig-prename descclassname"><span class="pre">Classifier.</span></code><code class="sig-name descname"><span class="pre">register_buffer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tensor</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">torch.Tensor</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">persistent</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#Topical.attention_classifier.Classifier.register_buffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a buffer to the module.</p>
+<p>This is typically used to register a buffer that should not to be
+considered a model parameter. For example, BatchNorm’s <code class="docutils literal notranslate"><span class="pre">running_mean</span></code>
+is not a parameter, but is part of the module’s state. Buffers, by
+default, are persistent and will be saved alongside parameters. This
+behavior can be changed by setting <code class="xref py py-attr docutils literal notranslate"><span class="pre">persistent</span></code> to <code class="docutils literal notranslate"><span class="pre">False</span></code>. The
+only difference between a persistent buffer and a non-persistent buffer
+is that the latter will not be a part of this module’s
+<a class="reference internal" href="Topical.attention_classifier.Classifier.state_dict.html#Topical.attention_classifier.Classifier.state_dict" title="Topical.attention_classifier.Classifier.state_dict"><code class="xref py py-attr docutils literal notranslate"><span class="pre">state_dict</span></code></a>.</p>
+<p>Buffers can be accessed as attributes using given names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>string</em>) – name of the buffer. The buffer can be accessed
+from this module using the given name</p></li>
+<li><p><strong>tensor</strong> (<em>Tensor</em>) – buffer to be registered.</p></li>
+<li><p><strong>persistent</strong> (<em>bool</em>) – whether the buffer is part of this module’s
+<a class="reference internal" href="Topical.attention_classifier.Classifier.state_dict.html#Topical.attention_classifier.Classifier.state_dict" title="Topical.attention_classifier.Classifier.state_dict"><code class="xref py py-attr docutils literal notranslate"><span class="pre">state_dict</span></code></a>.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="bp">self</span><span class="o">.</span><span class="n">register_buffer</span><span class="p">(</span><span class="s1">&#39;running_mean&#39;</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_features</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Eloul, Lherondelle.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

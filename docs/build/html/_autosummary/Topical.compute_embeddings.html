@@ -1,0 +1,470 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Topical.compute_embeddings &mdash; Topical 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Topical.compute_embeddings.complete_dataset_ast" href="Topical.compute_embeddings.complete_dataset_ast.html" />
+    <link rel="prev" title="crawler.api.github_crawler.search_readmes" href="crawler.api.github_crawler.search_readmes.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Topical
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.api.html">crawler.api.api</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.crawler_config.html">crawler.api.crawler_config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crawler.api.github_crawler.html">crawler.api.github_crawler</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Topical.compute_embeddings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.complete_dataset_ast.html">Topical.compute_embeddings.complete_dataset_ast</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.complete_dataset_pycg.html">Topical.compute_embeddings.complete_dataset_pycg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.compute_resources.html">Topical.compute_embeddings.compute_resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.explore_repository.html">Topical.compute_embeddings.explore_repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.get_ast_embeddings.html">Topical.compute_embeddings.get_ast_embeddings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.get_code_embeddings.html">Topical.compute_embeddings.get_code_embeddings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.get_docstring.html">Topical.compute_embeddings.get_docstring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.get_first.html">Topical.compute_embeddings.get_first</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.get_modules.html">Topical.compute_embeddings.get_modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.get_pycg.html">Topical.compute_embeddings.get_pycg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.get_resources.html">Topical.compute_embeddings.get_resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.iter_json.html">Topical.compute_embeddings.iter_json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Topical.compute_embeddings.read_script.html">Topical.compute_embeddings.read_script</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.run.html">Topical.run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topical.attention_classifier.html">Topical.attention_classifier</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Topical</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Topical.compute_embeddings</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/_autosummary/Topical.compute_embeddings.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="topical-compute-embeddings">
+<h1>Topical.compute_embeddings<a class="headerlink" href="#topical-compute-embeddings" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">Functions</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Topical.compute_embeddings.complete_dataset_ast" title="Topical.compute_embeddings.complete_dataset_ast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">complete_dataset_ast</span></code></a>(file_content)</p></td>
+<td><p>Get all the children and parents for a given file content, concatenate children together and parents together</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Topical.compute_embeddings.complete_dataset_pycg" title="Topical.compute_embeddings.complete_dataset_pycg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">complete_dataset_pycg</span></code></a>(file)</p></td>
+<td><p>Call PyCG parser and get dependencies from the raw graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Topical.compute_embeddings.compute_resources" title="Topical.compute_embeddings.compute_resources"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_resources</span></code></a>(dataset)</p></td>
+<td><p>Completed the Dataframe containing Dataset repository info with computed embeddings for each domains of the Hydrid Script-level embedding used by Topical</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Topical.compute_embeddings.explore_repository" title="Topical.compute_embeddings.explore_repository"><code class="xref py py-obj docutils literal notranslate"><span class="pre">explore_repository</span></code></a>(repo_path)</p></td>
+<td><p>Returns a list of all python script paths contained in a griven repository</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Topical.compute_embeddings.get_ast_embeddings" title="Topical.compute_embeddings.get_ast_embeddings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_ast_embeddings</span></code></a>(input_seq)</p></td>
+<td><p>Returns the embeddings for a list of tokenized dependencies</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Topical.compute_embeddings.get_code_embeddings" title="Topical.compute_embeddings.get_code_embeddings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_code_embeddings</span></code></a>(input_seq)</p></td>
+<td><p>Returns the embeddings for a list of tokenized code</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Topical.compute_embeddings.get_docstring" title="Topical.compute_embeddings.get_docstring"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_docstring</span></code></a>(file_content)</p></td>
+<td><p>Get all the docstring and function names from a given Script and concatenate them separing both type of data by a special token [SEP]</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Topical.compute_embeddings.get_first" title="Topical.compute_embeddings.get_first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_first</span></code></a>(s[, depth])</p></td>
+<td><p>Function to separate the different components of an import name (path materialized by a ‘.’)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Topical.compute_embeddings.get_modules" title="Topical.compute_embeddings.get_modules"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_modules</span></code></a>(file_content)</p></td>
+<td><p>Gets the imports and function names for a given python script content</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Topical.compute_embeddings.get_pycg" title="Topical.compute_embeddings.get_pycg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_pycg</span></code></a>(file_path)</p></td>
+<td><p>PyCG command line to generate a temporary json file containing the dependency graph for a given file</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Topical.compute_embeddings.get_resources" title="Topical.compute_embeddings.get_resources"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_resources</span></code></a>(topics, type_embeddings)</p></td>
+<td><p>Completes a given dataset by computing the desired embeddings on each of the repository</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#Topical.compute_embeddings.iter_json" title="Topical.compute_embeddings.iter_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_json</span></code></a>(data_d, pycg_list[, gen, parent])</p></td>
+<td><p>Recursive function to populate parent - child edges from PyCG dependencies graph</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#Topical.compute_embeddings.read_script" title="Topical.compute_embeddings.read_script"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_script</span></code></a>(script_path)</p></td>
+<td><p>Returns a script given a path if valid</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Detail</p>
+<span class="target" id="module-Topical.compute_embeddings"></span><p>This script permits to compute the different embeddings composing Topical hybrid Script Embeddings</p>
+<dl class="py function">
+<dt id="Topical.compute_embeddings.complete_dataset_ast">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">complete_dataset_ast</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_content</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#Topical.compute_embeddings.complete_dataset_ast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all the children and parents for a given file content, concatenate children together and parents together</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_content</strong> – Python script content</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Tuple containing a string of all parents and a string of all children for a given script content</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.complete_dataset_pycg">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">complete_dataset_pycg</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#Topical.compute_embeddings.complete_dataset_pycg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call PyCG parser and get dependencies from the raw graph</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> – Path to the file to parse</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of tuple (parent, children)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.compute_resources">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">compute_resources</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#Topical.compute_embeddings.compute_resources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Completed the Dataframe containing Dataset repository info with computed embeddings for each domains of the Hydrid
+Script-level embedding used by Topical</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dataset</strong> – Dataframe containing all the informations and the right columns about the dataset</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Augmented Dataframe containing the each hybrid component for each repository</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.explore_repository">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">explore_repository</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#Topical.compute_embeddings.explore_repository" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of all python script paths contained in a griven repository</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>repo_path</strong> – Path to the repository to explore</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of Python script paths</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.get_ast_embeddings">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">get_ast_embeddings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_seq</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">numpy.array</span><a class="headerlink" href="#Topical.compute_embeddings.get_ast_embeddings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the embeddings for a list of tokenized dependencies</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_seq</strong> – List of tokenized code using the appropriate tokenizer</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Matrix of embeddings corresponding</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.get_code_embeddings">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">get_code_embeddings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_seq</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">numpy.array</span><a class="headerlink" href="#Topical.compute_embeddings.get_code_embeddings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the embeddings for a list of tokenized code</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_seq</strong> – List of tokenized code using the appropriate tokenizer</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Matrix of embeddings corresponding</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.get_docstring">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">get_docstring</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_content</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#Topical.compute_embeddings.get_docstring" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all the docstring and function names from a given Script and concatenate
+them separing both type of data by a special token [SEP]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_content</strong> – Python script content</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>String of concatenated docstrings and function names for the given script content, None if the script didn’t contain any</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.get_first">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">get_first</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Topical.compute_embeddings.get_first" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to separate the different components of an import name (path materialized by a ‘.’)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> – raw import name</p></li>
+<li><p><strong>depth</strong> – number of components of the raw name to extract (from the deepest module to the largest one)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>converted import name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.get_modules">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">get_modules</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_content</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#Topical.compute_embeddings.get_modules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the imports and function names for a given python script content</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_content</strong> – Python script content</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A tuple containing the list of imports and the list of function names</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.get_pycg">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">get_pycg</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#Topical.compute_embeddings.get_pycg" title="Permalink to this definition">¶</a></dt>
+<dd><p>PyCG command line to generate a temporary json file containing the dependency graph for a given file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_path</strong> – Path to the file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dict containing the dependency graph for a given file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.get_resources">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">get_resources</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topics</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_embeddings</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">pandas.core.frame.DataFrame</span><a class="headerlink" href="#Topical.compute_embeddings.get_resources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Completes a given dataset by computing the desired embeddings on each of the repository</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>topics</strong> – List of topics to keep the final dataset</p></li>
+<li><p><strong>type_embeddings</strong> – List of type of embeddings to compose the hybrid script-level embeddings (Values: doctring, code, ast, pycg)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Augmented and topic-restricted dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.iter_json">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">iter_json</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_d</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pycg_list</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#Topical.compute_embeddings.iter_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursive function to populate parent - child edges from PyCG dependencies graph</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_d</strong> – children left to parse (fraction of PyCG dependencies graph left to parse)</p></li>
+<li><p><strong>pycg_list</strong> – parent-child edges</p></li>
+<li><p><strong>gen</strong> – current depth of exploration of the depedencies graph</p></li>
+<li><p><strong>parent</strong> – List of parents that have been parsed</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="Topical.compute_embeddings.read_script">
+<code class="sig-prename descclassname"><span class="pre">Topical.compute_embeddings.</span></code><code class="sig-name descname"><span class="pre">read_script</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">script_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#Topical.compute_embeddings.read_script" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a script given a path if valid</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>script_path</strong> – Path to the script to read</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Script content, None if the given path is not valid</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Topical.compute_embeddings.complete_dataset_ast.html" class="btn btn-neutral float-right" title="Topical.compute_embeddings.complete_dataset_ast" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="crawler.api.github_crawler.search_readmes.html" class="btn btn-neutral float-left" title="crawler.api.github_crawler.search_readmes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Eloul, Lherondelle.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
