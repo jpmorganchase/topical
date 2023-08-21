@@ -4,13 +4,22 @@ Topical introduces a deep learning model that can automatically tag source code 
 
 ## GitHub Crawler
 We develop a GitHub Crawler combining the official API with page scraping for additional metadata (git commits, repository tree, etc.). GitHub repositories are often classified by its owner using hand-picked topics, which can contain abbreviation, typos, and repetitions. Because of the large variations in topic names, GitHub also defines 480 featured topics, a limited number of predefined topics to be associated with the repository by its owner. In order to have a unique label for each category, the crawler maps the non-featured topics (hand-picked) to the GitHub featured topics using partial tokens matching methods relying on Levenshtein distance.
-To scrap the dataset, you can either connect on the API **HERE** (under construction) or execute this command line from the `crawler` directory : 
+
+To scrap the dataset, execute this command line from the `crawler` directory : 
 <html>
 <code>
 python api\github_crawler.py --topics topics.json</code>
 </html>
 
-after ensuring that the `crawler` directory contains a JSON file with the topics to scrap (either as a simple list or as a nested directory)
+after ensuring that the `crawler` directory contains a JSON file with the topics to scrap (either as a simple list or as a nested directory). The above topics.json is just an example of how to add topics for the crawler. 
+
+Please see examples/featured_topics.json for our the tags used for our specific use case and also examples/dataset.zip for the zip of the dataset used also. As stated above, you can re-create the 20 topics and dataset using featured_topics.json
+
+<html>
+<code>
+python api\github_crawler.py --topics examples/featured_topics.json</code>
+</html>
+
 
 ## Maintenance Level
 This repository is maintained to fix bugs and ensure the stability of the existing codebase. However, please note that the team does not plan to introduce new features or enhancements in the future.
