@@ -15,7 +15,7 @@ prometheus-client==0.11.0
 prompt-toolkit==3.0.19
 pyenchant==3.2.0
 python-Levenshtein-wheels==0.13.1
-scikit-learn==0.24.2
+scikit-learn==1.0.1
 scipy==1.4.1
 simpletransformers==0.61.6
 soupsieve==2.2.1
