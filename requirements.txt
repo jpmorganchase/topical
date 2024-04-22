@@ -16,7 +16,7 @@ prompt-toolkit==3.0.19
 pyenchant==3.2.0
 python-Levenshtein-wheels==0.13.1
 scikit-learn==0.24.2
-scipy==1.4.1
+scipy==1.11.1
 simpletransformers==0.61.6
 soupsieve==2.2.1
 Sphinx==3.5.2
